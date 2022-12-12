@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrega Final | Ian Ham</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1>Encuentra el iPhone perfecto para ti.</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- ELEMENTOS GENERADOS MEDIANTE JSON -->
+            <main id="items"></main>
+
+            <!-- Carrito -->
+            <section id="element-carrito" class="section-carrito">
+                <h2>Carrito</h2>
+
+                <!-- ARTÍCULOS EN EL CARRITO -->
+                <ul id="carrito" class="list-group"></ul>
+                
+                <hr>
+                
+                <!-- TOTAL -->
+                <p class="text-right text-total">Total: <span id="total"></span></p>
+                
+                <button id="boton-vaciar" class="btn">Vaciar Carrito</button>
+                <a href="./pages/conversorDivisas.html"><button id="boton-cambioDivisas" class="btn">Calcula el precio en tu moneda nacional</button></a>
+            </section>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
